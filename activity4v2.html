@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Activity 4</title>
+    <style>
+        /* Charcoal Background and White Text for the page */
+        body {
+            background-color: #333333; /* Charcoal */
+            color: #FFFFFF; /* White */
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        /* Form Container - White Background */
+        form {
+            background-color: #FFFFFF;
+            color: #333333; /* Charcoal text inside form */
+            padding: 20px;
+            border-radius: 8px;
+            display: inline-block;
+            border: 2px solid #0056b3; /* Blue Border */
+        }
+
+        /* Table Layout Fixes */
+        td {
+            padding: 8px;
+        }
+
+        /* Blue Theme for Labels and Headings */
+        h2 {
+            color: #FFFFFF;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        /* Input Styling */
+        input[type="text"], input[type="number"], select {
+            border: 1px solid #0056b3; /* Blue border */
+            padding: 5px;
+            border-radius: 4px;
+        }
+
+        /* Button Styling - Blue Background */
+        button {
+            background-color: #0056b3; /* Blue */
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button[type="reset"] {
+            background-color: #666666; /* Greyscale for reset */
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>User Information</h2>
+
+    <form action="" method="post">
+        <table border="0">
+            <tr>
+                <td><label for="fname">First Name:</label></td>
+                <td><input type="text" id="fname" name="firstname" required></td>
+            </tr>
+            <tr>
+                <td><label for="lname">Last Name:</label></td>
+                <td><input type="text" id="lname" name="lastname" required></td>
+            </tr>
+            <tr>
+                <td><label for="age">Age:</label></td>
+                <td><input type="number" id="age" name="age"></td>
+            </tr>
+            <tr>
+                <td><label>Gender:</label></td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top"><label>Hobbies:</label></td>
+                <td>
+                    <input type="checkbox" id="hobby1" name="hobby" value="Guitar"> <label for="hobby1">Guitar</label><br>
+                    <input type="checkbox" id="hobby2" name="hobby" value="Piano"> <label for="hobby2">Piano</label><br>
+                    <input type="checkbox" id="hobby3" name="hobby" value="Calisthenics"> <label for="hobby3">Calisthenics</label><br>
+                    <input type="checkbox" id="hobby4" name="hobby" value="Basketball"> <label for="hobby4">Basketball</label><br>
+                    <input type="checkbox" id="hobby5" name="hobby" value="Table Tennis"> <label for="hobby5">Table Tennis</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="year-level">Year Level:</label></td>
+                <td>
+                    <select id="year-level" name="year_level">
+                        <option value="1st-year">1st Year</option>
+                        <option value="2nd-year">2nd Year</option>
+                        <option value="3rd-year">3rd Year</option>
+                        <option value="4th-year">4th Year</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
